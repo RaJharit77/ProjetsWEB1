@@ -1,0 +1,899 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    display: flex;
+    background-image: url(../../background/pexels-alex-conchillos-3648850.jpg);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 11vh;
+    padding: 2vh 0;
+    color: black;
+    height: 11vh;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+.div1,
+.div3 {
+    flex-basis: 20vw;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.div2 {
+    flex-basis: 60vw;
+    cursor: pointer;
+}
+
+.div1 {
+    display: inherit;
+    align-items: center;
+    gap: 1vw;
+    padding-left: 3vw;
+}
+
+.div1 img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+#logo {
+    cursor: pointer;
+}
+
+.div2 {
+    display: inherit;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.div2 .search-content {
+    display: inherit;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #202020;
+    width: 35%;
+    height: 80%;
+    position: relative;
+    left: 70px;
+    padding: 0 1vw;
+    border-radius: 10px;
+
+}
+
+.search-content input {
+    background-color: white;
+    width: 95%;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+.search-content img {
+    width: 25px;
+    height: 25px;
+}
+
+.div2 .mode {
+    display: inherit;
+    width: 32%;
+    background-color: white;
+    justify-content: space-around;
+    padding: 1vh 1vw;
+    margin: 22px;
+    border-radius: 10px;
+    border: black solid 3px;
+}
+
+#localisation {
+    display: inherit;
+    align-items: center;
+    justify-content: inherit;
+    background-color: white;
+    width: 100px;
+    height: 100%;
+    padding: 5px;
+    background-color: transparent;
+    color: black;
+    border-radius: 10px;
+    border: black solid 4px;
+}
+
+.mode img {
+    position: relative;
+    left: 4px;
+    width: 30px;
+    height: 30px;
+}
+
+.div3 {
+    display: inherit;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2vw;
+}
+
+.div3 img {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    right: 5px;
+    cursor: pointer;
+}
+
+.barre1 {
+    display: inherit;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 1px;
+    padding-right: 20%;
+    position: relative;
+    left: 34px;
+}
+
+a {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    text-decoration: none;
+    color: black;
+}
+
+.accueil {
+    position: relative;
+    left: 5%;
+    transition: transform 200ms linear;
+}
+
+.accueil:hover {
+    transform: scale(1.2);
+}
+
+.hommes {
+    position: relative;
+    left: 70px;
+    transition: transform 200ms linear;
+}
+
+.hommes:hover {
+    transform: scale(1.2);
+}
+
+.femmes {
+    position: relative;
+    left: 135px;
+    transition: transform 200ms linear;
+}
+
+.femmes:hover {
+    transform: scale(1.2);
+}
+
+.sports {
+    position: relative;
+    left: 205px;
+    transition: transform 200ms linear;
+}
+
+.sports:hover {
+    transform: scale(1.2);
+}
+
+.produits {
+    position: relative;
+    left: 280px;
+    transition: transform 200ms linear;
+}
+
+.produits:hover {
+    transform: scale(1.2);
+}
+
+.container {
+    display: inherit;
+    flex-direction: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    position: fixed;
+    margin: 11%;
+    margin-right: 10%;
+    padding: 240px;
+    padding-left: 1px;
+    padding-right: 1px;
+    max-height: min-content;
+    height: 200px;
+    background-image: url(../../background/fondClaire.jpg);
+    color: black;
+    border-radius: 10px;
+    animation-name: deplacement;
+    animation-duration: 2s;
+}
+
+.titre {
+    position: relative;
+    margin: 2%;
+    bottom: 195px;
+    white-space: pre-line;
+}
+
+.description1 {
+    position: relative;
+    align-items: inherit;
+    text-align: left;
+    margin: 0%;
+    bottom: 200px;
+}
+
+.description2 {
+    position: relative;
+    align-items: inherit;
+    text-align: left;
+    margin: 1%;
+    white-space: pre-line;
+}
+
+.description3 {
+    white-space: pre-line;
+}
+
+.consultation {
+    display: inherit;
+    align-items: center;
+    flex-basis: 60vw;
+    justify-content: space-between;
+}
+
+.forms1 {
+    position: relative;
+    left: 7.5%;
+    top: 85%;
+    margin: 5%;
+}
+
+#nom {
+    left: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.forms2 {
+    position: relative;
+    left: 7.5%;
+    top: 85%;
+    margin: 5%;
+}
+
+#mots {
+    left: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.forms3 {
+    position: relative;
+    left: 11%;
+    top: 85%;
+    margin: 2%;
+}
+
+#email {
+    left: 1%;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-bottom: 1%;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.button1 {
+    position: relative;
+    left: 12%;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    top: 85%;
+    margin: 2%;
+    border-radius: 5px;
+    border: 3px solid black;
+}
+
+.button1:hover {
+    background-color: #FFDB58;
+}
+
+.button2 {
+    position: relative;
+    left: 12%;
+    top: 85%;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    margin: 2%;
+    border-radius: 5px;
+    border: 3px solid black;
+}
+
+.button2:hover {
+    background-color: #FFDB58;
+}
+
+.liens {
+    position: relative;
+    left: 0%;
+    top: 85%;
+    padding-top: 1%;
+    padding-left: -15%;
+    padding-right: 1%;
+    margin: 1%;
+    text-decoration: underline;
+    color: #202020;
+}
+
+@keyframes deplacement {
+
+    0%,
+    25% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(300px);
+    }
+
+    25% {
+        transform: translateY(0);
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    h1 {
+        display: none;
+    }
+
+    .div2 .search-content {
+        position: absolute;
+        width: 23%;
+        height: 50%;
+        left: 17%;
+    }
+
+    .div2 .mode {
+        position: absolute;
+        width: 33%;
+        left: 36%;
+    }
+
+    .barre1 {
+        display: block;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 49%;
+        padding-right: 49%;
+        padding-top: 15%;
+        position: absolute;
+        left: 0;
+        width: 6%;
+        background-color: #fff;
+        top: 102px;
+        border-radius: 20px;
+        border: #202020 solid 4px;
+        position: fixed;
+        z-index: 1;
+    }
+
+    a {
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+        text-decoration: none;
+        color: black;
+    }
+
+    .accueil {
+        position: absolute;
+        left: 1%;
+        top: 30%;
+    }
+
+    .hommes {
+        position: absolute;
+        left: 75px;
+        top: 30%;
+    }
+
+    .femmes {
+        position: absolute;
+        left: 170px;
+        top: 30%;
+    }
+
+    .sports {
+        position: absolute;
+        left: 270px;
+        top: 30%;
+    }
+
+    .produits {
+        position: absolute;
+        left: 345px;
+        top: 30%;
+    }
+
+    nav {
+        position: fixed;
+        font-size: 1em;
+        z-index: 100;
+    }
+
+    .div4 {
+        position: absolute;
+        padding-top: 510%;
+        padding-bottom: 510%;
+        top: 20%;
+    }
+
+    .info1 {
+        left: 0;
+        top: 1%;
+    }
+
+    .contact2 {
+        left: 0;
+        top: 5%;
+    }
+
+    .info2 {
+        top: 6.5%;
+    }
+
+    .contact3 {
+        top: 13.5%;
+    }
+
+    .info3 {
+        left: 1%;
+        top: 14.5%;
+    }
+
+    .listes {
+        top: 16.5%;
+    }
+
+    .remerciment {
+        top: 18%;
+    }
+
+    .formulaire {
+        top: 20%;
+    }
+
+    textarea {
+        width: 30%;
+    }
+
+    .texte3 {
+        position: absolute;
+        font-size: 1em;
+        margin: 2%;
+        left: 0;
+        top: 47%;
+    }
+
+    .texte4 {
+        position: absolute;
+        font-size: 1em;
+        margin: 2%;
+        left: 0;
+        top: 60%;
+    }
+
+    .questions {
+        position: absolute;
+        left: 1%;
+        top: 20%;
+    }
+
+    #questions {
+        left: 0%;
+        padding-top: 2%;
+        padding-left: 1%;
+        padding-right: 20%;
+        padding-bottom: 2%;
+        margin: 2%;
+        top: 10%;
+        border: 3px solid black;
+    }
+
+    .forms1 {
+        position: absolute;
+        left: 7.5%;
+        top: 22%;
+    }
+
+    #nom {
+        left: 1%;
+        padding-top: 4%;
+        padding-left: 1%;
+        padding-right: 20%;
+        padding-bottom: 4%;
+        margin: 2%;
+        top: 10%;
+        border: 3px solid black;
+    }
+
+    .forms2 {
+        position: absolute;
+        left: 7.5%;
+        top: 24%;
+    }
+
+    #pays {
+        margin-left: 2%;
+        padding-top: 4%;
+        padding-left: 1%;
+        padding-right: 20%;
+        padding-bottom: 4%;
+        margin: 1%;
+        top: 10%;
+        border: 3px solid black;
+    }
+
+    .forms3 {
+        position: absolute;
+        left: 7%;
+        top: 26%;
+    }
+
+    #email {
+        margin-left: 2%;
+        padding-top: 4%;
+        padding-left: 1%;
+        padding-right: 20%;
+        padding-bottom: 4%;
+        margin: 1%;
+        top: 10%;
+        border: 3px solid black;
+    }
+
+    .textArea {
+        position: absolute;
+        left: 6%;
+        bottom: 20%;
+    }
+
+    .message {
+        position: absolute;
+        left: 1%;
+        bottom: 430px;
+    }
+
+    .bouton {
+        position: absolute;
+        top: 30%;
+        margin: 2%;
+    }
+
+    .button1 {
+        position: absolute;
+        left: 7%;
+        /*bottom: 47%;*/
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-bottom: 1%;
+        padding-top: 1%;
+        border-radius: 10px;
+        top: 30%;
+    }
+
+    .button1:hover {
+        background-color: #FFDB58;
+    }
+
+    .button2 {
+        position: absolute;
+        left: 20%;
+        bottom: 47%;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-bottom: 1%;
+        padding-top: 1%;
+        border-radius: 10px;
+    }
+
+    .button2:hover {
+        background-color: #FFDB58;
+    }
+
+    .titleInfo1 {
+        position: absolute;
+        left: 1%;
+        top: 81%;
+    }
+
+    .info4 {
+        position: absolute;
+        left: 1%;
+        top: 84%;
+    }
+
+    .titleInfo2 {
+        position: absolute;
+        left: 1%;
+        top: 87%;
+    }
+
+    .info5 {
+        position: absolute;
+        left: 1%;
+        top: 90%;
+    }
+
+    .titleInfo3 {
+        position: absolute;
+        left: 1%;
+        top: 94%;
+    }
+
+    .info6 {
+        position: absolute;
+        left: 1%;
+        top: 97%;
+    }
+
+
+    .button3 {
+        padding: 20px;
+        padding-left: 1px;
+        padding-right: 1px;
+        position: absolute;
+        left: 3px;
+        background-color: aliceblue;
+        background-size: cover;
+        bottom: 60px;
+        border-radius: 10px;
+        font-size: 11px;
+        animation: button 3s infinite;
+    }
+
+    .div6 {
+        display: flex;
+        position: absolute;
+        width: 10%;
+        padding-right: 6%;
+        padding-top: 80%;
+        left: 0%;
+        bottom: 100%;
+        margin-top: 598%;
+    }
+
+    .div6 img {
+        position: absolute;
+        left: 20%;
+        top: 1%;
+        border-radius: 10%;
+        background-color: #FFDB58;
+    }
+
+    .button4 {
+        padding: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        position: absolute;
+        left: 25%;
+        background-color: black;
+        background-size: cover;
+        top: 350px;
+        color: white;
+        border-radius: 10px;
+        font-size: 11px;
+        animation: button 3s infinite;
+    }
+
+    footer {
+        display: flex;
+        position: absolute;
+        width: 20%;
+        padding-right: 1%;
+        top: 2420px;
+    }
+
+    .div7 {
+        position: absolute;
+        padding-left: 249%;
+        padding-right: 249%;
+        padding-bottom: 590%;
+    }
+
+    .footer1 {
+        position: absolute;
+        left: 1%;
+        width: 16%;
+        bottom: 62%;
+    }
+
+    .title2 {
+        position: absolute;
+        left: 1%;
+        padding-right: 15%;
+    }
+
+    .texte11 {
+        position: absolute;
+        left: 1%;
+        padding-right: 15%;
+    }
+
+    .texte12 {
+        position: absolute;
+        left: 1%;
+        padding-right: 15%;
+        padding-bottom: 2%;
+    }
+
+    .texte13 {
+        position: absolute;
+        left: 1%;
+        padding-right: 15%;
+    }
+
+    .div9 {
+        position: absolute;
+        left: 0;
+        padding-left: 24%;
+        padding-right: 24%;
+        padding-bottom: 20%;
+    }
+
+    .title3 {
+        position: absolute;
+        left: 1%;
+        padding-right: 15%;
+    }
+
+    .texte14 {
+        position: absolute;
+        left: 1%;
+        padding-right: 15%;
+    }
+
+    .texte15 {
+        position: absolute;
+        left: 1%;
+        padding-right: 15%;
+    }
+
+    .texte16 {
+        position: absolute;
+        left: 1%;
+        padding-right: 15%;
+    }
+
+    .liens {
+        position: absolute;
+        left: 0;
+        padding-left: 24%;
+        padding-right: 24%;
+        padding-bottom: 57%;
+    }
+
+    .title4 {
+        position: absolute;
+        left: 1%;
+        padding-right: 15%;
+    }
+
+    #fb {
+        position: absolute;
+        left: 1%;
+        padding-right: 15%;
+        width: 35%;
+    }
+
+    #ig {
+        position: absolute;
+        left: 22%;
+        padding-right: 15%;
+        width: 35%;
+    }
+
+    #whapp {
+        position: absolute;
+        left: 40%;
+        padding-right: 15%;
+        width: 35%;
+    }
+
+    #yt {
+        position: absolute;
+        left: 57%;
+        padding-right: 15%;
+        width: 35%;
+    }
+
+    #x {
+        position: absolute;
+        left: 75%;
+        padding-right: 15%;
+        width: 35%;
+    }
+
+    #pinterest {
+        position: absolute;
+        left: 95%;
+        padding-right: 15%;
+        width: 35%;
+    }
+
+    #in {
+        position: absolute;
+        left: 115%;
+        padding-right: 15%;
+        width: 35%;
+    }
+
+    .title5 {
+        position: absolute;
+        left: 1%;
+        padding-right: 15%;
+        padding-bottom: 90%;
+    }
+
+    #amazon {
+        position: absolute;
+        left: 40%;
+        padding-right: 15%;
+        margin-bottom: 90%;
+        width: 24%;
+        height: 5%;
+    }
+
+    .title6 {
+        position: absolute;
+        left: 1%;
+        padding-right: 15%;
+        padding-bottom: 79%;
+    }
+
+    #visa {
+        position: absolute;
+        left: 50%;
+        padding-right: 15%;
+        margin-bottom: 78%;
+        width: 28%;
+        height: 5%;
+    }
+
+    #masterCard {
+        position: absolute;
+        left: 62%;
+        padding-right: 15%;
+        margin-bottom: 78%;
+        width: 27%;
+        height: 5%;
+    }
+}

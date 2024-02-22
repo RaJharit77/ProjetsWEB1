@@ -1,0 +1,1305 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    display: flex;
+    background-image: url(../../background/pexels-alex-conchillos-3648850.jpg);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 11vh;
+    padding: 2vh 0;
+    color: black;
+    height: 11vh;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+.div1,
+.div3 {
+    flex-basis: 20vw;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.div2 {
+    flex-basis: 60vw;
+    cursor: pointer;
+}
+
+.div1 {
+    display: inherit;
+    align-items: center;
+    gap: 1vw;
+    padding-left: 3vw;
+}
+
+.div1 img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+#logo {
+    cursor: pointer;
+}
+
+.div2 {
+    display: inherit;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.div2 .search-content {
+    display: inherit;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #202020;
+    width: 35%;
+    height: 80%;
+    position: relative;
+    left: 70px;
+    padding: 0 1vw;
+    border-radius: 10px;
+
+}
+
+.search-content input {
+    background-color: white;
+    width: 95%;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+.search-content img {
+    width: 25px;
+    height: 25px;
+}
+
+.div2 .mode {
+    display: inherit;
+    width: 32%;
+    background-color: aliceblue;
+    justify-content: space-around;
+    padding: 1vh 1vw;
+    margin: 22px;
+    border-radius: 10px;
+    border: black solid 3px;
+}
+
+#localisation {
+    display: inherit;
+    align-items: center;
+    justify-content: inherit;
+    background-color: aliceblue;
+    width: 100px;
+    height: 100%;
+    padding: 5px;
+    background-color: transparent;
+    color: black;
+    border-radius: 10px;
+    border: black solid 4px;
+}
+
+.mode img {
+    position: relative;
+    left: 4px;
+    width: 30px;
+    height: 30px;
+}
+
+.div3 {
+    display: inherit;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2vw;
+}
+
+.div3 img {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    right: 5px;
+    cursor: pointer;
+}
+
+.barre1 {
+    display: inherit;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 1px;
+    padding-right: 20%;
+    position: relative;
+    left: 34px;
+}
+
+a {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    text-decoration: none;
+    color: black;
+}
+
+.accueil {
+    position: relative;
+    left: 5%;
+    transition: transform 200ms linear;
+}
+
+.accueil:hover {
+    transform: scale(1.2);
+}
+
+.hommes {
+    position: relative;
+    left: 70px;
+    transition: transform 200ms linear;
+}
+
+.hommes:hover {
+    transform: scale(1.2);
+}
+
+.femmes {
+    position: relative;
+    left: 135px;
+    transition: transform 200ms linear;
+}
+
+.femmes:hover {
+    transform: scale(1.2);
+}
+
+.sports {
+    position: relative;
+    left: 205px;
+    transition: transform 200ms linear;
+}
+
+.sports:hover {
+    transform: scale(1.2);
+}
+
+.produits {
+    position: relative;
+    left: 280px;
+    transition: transform 200ms linear;
+}
+
+.produits:hover {
+    transform: scale(1.2);
+}
+
+.titre1 {
+    position: absolute;
+    left: 1px;
+    top: 85px;
+    padding-left: 45.4%;
+    padding-right: 45.4%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    background-image: url(../../background/fondClaire.jpg);
+}
+
+@keyframes deplacement {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 7;
+    }
+}
+
+.femme1 {
+    position: absolute;
+    text-align: left;
+    background-size: cover;
+    top: 170px;
+    padding-left: 175px;
+    padding-right: 175px;
+    padding-top: 389px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)), url(../../photo/Hummel\ -\ Sweat\ à\ capuche\ doux\ -\ Noir.jpg);
+}
+
+.product1 {
+    position: relative;
+    bottom: 77px;
+    font-size: 16px;
+    color: aliceblue;
+    animation: deplacement 7s ease-in-out infinite;
+}
+
+.femme2 {
+    position: absolute;
+    text-align: left;
+    background-size: cover;
+    left: 480px;
+    top: 170px;
+    padding-left: 170px;
+    padding-right: 170px;
+    padding-top: 390px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)), url(../../photo/Hummel\ -\ Thor\ -\ Baskets\ unisexes\ -\ Gris.jpg);
+}
+
+.product2 {
+    position: relative;
+    bottom: 77px;
+    font-size: 16px;
+    color: aliceblue;
+    animation: deplacement 7s ease-in-out infinite;
+}
+
+.femme3 {
+    position: absolute;
+    text-align: left;
+    background-size: cover;
+    left: 902px;
+    top: 170px;
+    padding-left: 105px;
+    padding-right: 105px;
+    padding-top: 390px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)), url(../../photo/Hummel\ -\ Legging\ moulant\ sans\ coutures\ -\ Noir-Black.jpg);
+}
+
+.product3 {
+    position: relative;
+    bottom: 77px;
+    font-size: 16px;
+    color: aliceblue;
+    animation: deplacement 7s ease-in-out infinite;
+}
+
+.femme4 {
+    position: absolute;
+    text-align: left;
+    background-size: cover;
+    left: 79%;
+    top: 170px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 390px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)), url(../../photo/Hummel\ -\ Legging\ taille\ haute\ sans\ coutures\ -\ Bleu.jpg);
+}
+
+.product4 {
+    position: relative;
+    bottom: 77px;
+    font-size: 16px;
+    color: aliceblue;
+    animation: deplacement 7s ease-in-out infinite;
+}
+
+.produit1 {
+    position: absolute;
+    text-align: left;
+    background-size: cover;
+    left: 1px;
+    top: 590px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 390px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)), url(../../photo/Hummel\ Mikina\ -\ sports\ yellow.jpg);
+}
+
+.produit2 {
+    position: absolute;
+    text-align: left;
+    background-size: cover;
+    left: 415px;
+    top: 590px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 390px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)), url(../../photo/Hummel\ CORE\ -\ Sweat\ à\ capuche\ -\ blue\ danube.jpg);
+}
+
+.produit3 {
+    position: absolute;
+    text-align: left;
+    background-size: cover;
+    left: 827px;
+    top: 590px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 390px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)), url(../../photo/Leggings\ Für\ Frauen\ Hummel\ Mt\ Saga.jpg);
+}
+
+.uni {
+    position: absolute;
+    text-align: left;
+    background-size: cover;
+    left: 81.5%;
+    top: 590px;
+    padding-left: 135px;
+    padding-right: 135px;
+    padding-top: 390px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)), url(../../photo/Hummel\ VM78.jpg);
+}
+
+.produit4 {
+    position: absolute;
+    text-align: left;
+    left: 1px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 390px;
+    top: 990px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)), url(../../photo/2er-set\ Sport-bhs\ Für\ Frauen\ Hummel\ Te\ Maja.jpg);
+}
+
+.produit5 {
+    position: absolute;
+    text-align: left;
+    left: 415px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 390px;
+    top: 990px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)), url(../../photo/Hummel\ -\ Veste\ de\ survêtement\ à\ liseré\ -\ Noir.jpg);
+}
+
+.produit6 {
+    position: absolute;
+    text-align: left;
+    left: 827px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 390px;
+    top: 990px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)), url(../../photo/Hummel\ SEAMLESS\ -\ Débardeur\ -\ white.jpg);
+}
+
+.produit7 {
+    position: absolute;
+    text-align: left;
+    left: 81.5%;
+    padding-left: 135px;
+    padding-right: 135px;
+    padding-top: 390px;
+    top: 990px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)), url(../../photo/Hummel\ SEAMLESS\ -\ Urheiluliivit_\ keskitason\ tuki\ -\ chateau\ gray\ black\ melange.jpg);
+}
+
+.produit8 {
+    position: absolute;
+    text-align: left;
+    left: 1px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 530px;
+    top: 1390px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)), url(../../photo/Hummel\ -\ Tif\ -\ Soutien-gorge\ de\ sport\ sans\ coutures\ -\ Bleu.jpg);
+}
+
+.produit9 {
+    position: absolute;
+    text-align: left;
+    left: 415px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 530px;
+    top: 1390px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)), url(../../photo/Hummel\ -\ Seamless\ -\ T-shirt\ à\ manches\ longues\ -\ Kaki-Vert.jpg);
+}
+
+.produit10 {
+    position: absolute;
+    text-align: left;
+    left: 827px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 530px;
+    top: 1390px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)), url(../../photo/Hummel\ -\ Tif\ -\ Soutien-gorge\ de\ sport\ sans\ coutures\ -\ Noir-Black\ .jpg);
+}
+
+.produit11 {
+    position: absolute;
+    text-align: left;
+    left: 81.5%;
+    padding-left: 135px;
+    padding-right: 135px;
+    padding-top: 530px;
+    top: 1390px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)), url(../../photo/Hummel\ -\ T-shirt\ à\ manches\ courtes\ en\ coton\ avec\ logo\ -\ Noir-Black.jpg);
+}
+
+.vetement1 {
+    position: absolute;
+    left: 5px;
+    bottom: 77px;
+    color: white;
+}
+
+.price1 {
+    position: absolute;
+    text-decoration: line-through;
+    left: 5px;
+    bottom: 50px;
+    color: white;
+}
+
+.price2 {
+    position: absolute;
+    left: 75px;
+    bottom: 50px;
+    color: white;
+}
+
+.price3 {
+    position: absolute;
+    left: 5px;
+    bottom: 50px;
+    color: white;
+}
+
+.panier {
+    position: absolute;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    left: 5px;
+    border-radius: 10px;
+    bottom: 5px;
+}
+
+.achat {
+    position: absolute;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    left: 195px;
+    border-radius: 10px;
+    bottom: 5px;
+}
+
+.achat2 {
+    position: absolute;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    left: 160px;
+    border-radius: 10px;
+    bottom: 5px;
+}
+
+.vetement2 {
+    position: absolute;
+    left: 5px;
+    bottom: 77px;
+    color: white;
+}
+
+.div6 {
+    position: absolute;
+    left: 0%;
+    text-align: center;
+    top: 1930px;
+    padding-left: 21.5%;
+    padding-right: 21.5%;
+    padding-top: 2.49%;
+    padding-bottom: 120px;
+    background-size: cover;
+    line-height: 1.6;
+    background-color: #FFDB58;
+}
+
+.texte3 {
+    font-size: 20px;
+    margin: 2%;
+}
+
+.div6 img {
+    border-radius: 10%;
+    background-color: #FFDB58;
+}
+
+.button4 {
+    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    left: 655px;
+    background-color: black;
+    background-size: cover;
+    top: 400px;
+    color: white;
+    border-radius: 10px;
+    font-size: 11px;
+    animation: button 3s infinite;
+}
+
+@keyframes button {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    75% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+button:hover {
+    background-color: #FFDB58;
+    cursor: pointer;
+    color: black;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 0;
+    color: black;
+    height: 11vh;
+    width: 100%;
+    position: absolute;
+}
+
+.div7 {
+    display: inherit;
+    align-items: start;
+    flex-basis: 20vw;
+    gap: 1vw;
+    padding-left: 47.97%;
+    padding-right: 47.97%;
+    padding-top: 400px;
+    position: absolute;
+    top: 2420px;
+    z-index: -1;
+    background-color: white;
+}
+
+.div7 img {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    left: 35px;
+    bottom: 268px;
+    border-radius: 100%;
+}
+
+.texte5 {
+    position: absolute;
+    left: 45px;
+    bottom: 245px;
+    font-size: 13px;
+}
+
+.texte6 {
+    position: absolute;
+    left: 45px;
+    bottom: 215px;
+    font-size: 13px;
+}
+
+.texte7 {
+    position: absolute;
+    left: 45px;
+    bottom: 185px;
+    font-size: 13px;
+}
+
+.texte8 {
+    position: absolute;
+    left: 45px;
+    bottom: 155px;
+    font-size: 13px;
+}
+
+.texte9 {
+    position: absolute;
+    left: 45px;
+    bottom: 85px;
+    font-size: 13px;
+}
+
+.texte10 {
+    position: absolute;
+    left: 45px;
+    bottom: 55px;
+    font-size: 13px;
+}
+
+.title2 {
+    position: absolute;
+    left: 480px;
+    color: black;
+    bottom: 310px;
+}
+
+.texte11 {
+    position: absolute;
+    left: 480px;
+    color: black;
+    bottom: 270px;
+    font-size: 13px;
+}
+
+.texte12 {
+    position: absolute;
+    left: 480px;
+    bottom: 240px;
+    font-size: 13px;
+}
+
+.texte13 {
+    position: absolute;
+    left: 480px;
+    bottom: 210px;
+    font-size: 13px;
+}
+
+.title3 {
+    position: absolute;
+    left: 720px;
+    color: black;
+    bottom: 312px;
+}
+
+.texte14 {
+    position: absolute;
+    left: 720px;
+    bottom: 270px;
+    font-size: 13px;
+}
+
+.texte15 {
+    position: absolute;
+    left: 720px;
+    bottom: 240px;
+    font-size: 13px;
+}
+
+.texte16 {
+    position: absolute;
+    left: 720px;
+    bottom: 210px;
+    font-size: 13px;
+}
+
+.title4 {
+    position: absolute;
+    right: 365px;
+    color: black;
+    bottom: 310px;
+    font-size: 15px;
+}
+
+#fb {
+    position: absolute;
+    left: 1010px;
+    bottom: 250px;
+    width: 35px;
+    height: 35px;
+}
+
+#ig {
+    position: absolute;
+    left: 1055px;
+    bottom: 242px;
+    width: 45px;
+    height: 45px;
+}
+
+#pinterest {
+    position: absolute;
+    left: 1110px;
+    bottom: 250px;
+    width: 35px;
+    height: 35px;
+}
+
+#whapp {
+    position: absolute;
+    left: 1150px;
+    bottom: 243px;
+    width: 45px;
+    height: 45px;
+}
+
+#yt {
+    position: absolute;
+    left: 1195px;
+    bottom: 240px;
+    width: 50px;
+    height: 50px;
+}
+
+#x {
+    position: absolute;
+    left: 1250px;
+    bottom: 250px;
+    width: 35px;
+    height: 35px;
+}
+
+#in {
+    position: absolute;
+    left: 1290px;
+    bottom: 250px;
+    width: 35px;
+    height: 35px;
+}
+
+.title5 {
+    position: absolute;
+    left: 520px;
+    color: black;
+    bottom: 85px;
+    font-size: 15px;
+}
+
+#amazon {
+    position: absolute;
+    left: 685px;
+    bottom: 75px;
+    width: 35px;
+    height: 35px;
+}
+
+.title6 {
+    position: absolute;
+    left: 1015px;
+    color: black;
+    bottom: 85px;
+    font-size: 15px;
+}
+
+#visa {
+    position: absolute;
+    left: 1225px;
+    bottom: 75px;
+    width: 70px;
+    height: 50px;
+}
+
+#masterCard {
+    position: absolute;
+    left: 1290px;
+    bottom: 75px;
+    width: 70px;
+    height: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+    h1 {
+        display: none;
+    }
+
+    .div2 .search-content {
+        position: absolute;
+        width: 27%;
+        height: 50%;
+        left: 18%;
+    }
+
+    .div2 .mode {
+        position: absolute;
+        width: 35%;
+        left: 40%;
+    }
+
+    .barre1 {
+        display: block;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 49%;
+        padding-right: 49%;
+        padding-top: 15%;
+        position: absolute;
+        left: 0;
+        width: 6%;
+        background-color: #fff;
+        top: 102px;
+        border-radius: 20px;
+        border: #202020 solid 4px;
+        position: fixed;
+        z-index: 1;
+    }
+
+    a {
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+        text-decoration: none;
+        color: black;
+    }
+
+    .accueil {
+        position: absolute;
+        left: 1%;
+        top: 30%;
+    }
+
+    .hommes {
+        position: absolute;
+        left: 75px;
+        top: 30%;
+    }
+
+    .femmes {
+        position: absolute;
+        left: 170px;
+        top: 30%;
+    }
+
+    .sports {
+        position: absolute;
+        left: 270px;
+        top: 30%;
+    }
+
+    .produits {
+        position: absolute;
+        left: 345px;
+        top: 30%;
+    }
+
+    nav {
+        position: fixed;
+        font-size: 1em;
+        z-index: 100;
+    }
+
+    .titre1 {
+        position: absolute;
+        padding-left: 33.5%;
+        padding-right: 33.5%;
+        top: 19%;
+    }
+
+    .femme1 {
+        position: absolute;
+        padding-left: 35%;
+        padding-right: 35%;
+        padding-top: 99%;
+        top: 28%;
+    }
+
+
+    .femme2 {
+        position: absolute;
+        left: 0;
+        padding-left: 41%;
+        padding-right: 41%;
+        top: 77%;
+    }
+
+    .femme3 {
+        position: absolute;
+        left: 0;
+        padding-left: 41.3%;
+        padding-right: 41.3%;
+        top: 122%;
+    }
+
+    .femme4 {
+        position: absolute;
+        left: 0;
+        padding-left: 34.6%;
+        padding-right: 34.6%;
+        top: 167%;
+    }
+
+    .achat2 {
+        margin: 10%;
+        bottom: -8.5%;
+    }
+
+    .produit1 {
+        position: absolute;
+        padding-left: 50%;
+        padding-right: 50%;
+        top: 212%;
+    }
+
+    .produit2 {
+        position: absolute;
+        left: 0;
+        padding-left: 50%;
+        padding-right: 50%;
+        top: 255%;
+        display: none;
+    }
+
+    .produit3 {
+        position: absolute;
+        left: 0;
+        padding-left: 50%;
+        padding-right: 50%;
+        top: 298%;
+        display: none;
+    }
+
+    .uni {
+        position: absolute;
+        left: 0;
+        padding-left: 50%;
+        padding-right: 50%;
+        top: 341%;
+    }
+
+    .produit4 {
+        position: absolute;
+        padding-left: 50%;
+        padding-right: 50%;
+        top: 384%;
+    }
+
+    .produit5 {
+        position: absolute;
+        left: 0;
+        padding-left: 50%;
+        padding-right: 50%;
+        top: 427%;
+        display: none;
+    }
+
+    .produit6 {
+        position: absolute;
+        left: 0;
+        padding-left: 50%;
+        padding-right: 50%;
+        top: 255%;
+    }
+
+    .produit7 {
+        position: absolute;
+        left: 0;
+        padding-left: 50%;
+        padding-right: 50%;
+        top: 298%;
+    }
+
+    .produit8 {
+        position: absolute;
+        padding-left: 15%;
+        padding-right: 15%;
+        top: 290%;
+        display: none;
+    }
+
+    .produit9 {
+        position: absolute;
+        padding-left: 15%;
+        padding-right: 15%;
+        top: 200%;
+        display: none;
+    }
+
+    .produit10 {
+        position: absolute;
+        padding-left: 15%;
+        padding-right: 15%;
+        top: 200%;
+        display: none;
+    }
+
+    .produit11 {
+        position: absolute;
+        left: 0;
+        padding-left: 50%;
+        padding-right: 50%;
+        padding-top: 117%;
+        padding-bottom: 0%;
+        top: 427%;
+    }
+
+    .button3 {
+        padding: 20px;
+        padding-left: 1px;
+        padding-right: 1px;
+        position: absolute;
+        left: 3px;
+        background-color: aliceblue;
+        background-size: cover;
+        bottom: 60px;
+        border-radius: 10px;
+        font-size: 11px;
+        animation: button 3s infinite;
+    }
+
+    .div6 {
+        display: flex;
+        position: absolute;
+        width: 10%;
+        padding-right: 79%;
+        padding-top: 80%;
+        left: 0%;
+        bottom: 100%;
+        margin-top: 598%;
+    }
+
+    .texte3 {
+        position: absolute;
+        font-size: 1em;
+        margin: 2%;
+        left: 0;
+        top: 47%;
+    }
+
+    .texte4 {
+        position: absolute;
+        font-size: 1em;
+        margin: 2%;
+        left: 0;
+        top: 60%;
+    }
+
+    .div6 img {
+        position: absolute;
+        left: 20%;
+        top: 1%;
+        border-radius: 10%;
+        background-color: #FFDB58;
+    }
+
+    .button4 {
+        padding: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        position: absolute;
+        left: 25%;
+        background-color: black;
+        background-size: cover;
+        top: 350px;
+        color: white;
+        border-radius: 10px;
+        font-size: 11px;
+        animation: button 3s infinite;
+    }
+
+    footer {
+        display: flex;
+        position: absolute;
+        width: 20%;
+        padding-right: 1%;
+        top: 2420px;
+    }
+
+    .div7 {
+        position: absolute;
+        padding-left: 249%;
+        padding-right: 249%;
+        padding-bottom: 590%;
+    }
+
+    .footer1 {
+        position: absolute;
+        left: 1%;
+        width: 16%;
+        bottom: 62%;
+    }
+
+    .title2 {
+        position: absolute;
+        left: 1%;
+        padding-right: 15%;
+    }
+
+    .texte11 {
+        position: absolute;
+        left: 1%;
+        padding-right: 15%;
+    }
+
+    .texte12 {
+        position: absolute;
+        left: 1%;
+        padding-right: 15%;
+        padding-bottom: 2%;
+    }
+
+    .texte13 {
+        position: absolute;
+        left: 1%;
+        padding-right: 15%;
+    }
+
+    .div9 {
+        position: absolute;
+        left: 0;
+        padding-left: 24%;
+        padding-right: 24%;
+        padding-bottom: 20%;
+    }
+
+    .title3 {
+        position: absolute;
+        left: 1%;
+        padding-right: 15%;
+    }
+
+    .texte14 {
+        position: absolute;
+        left: 1%;
+        padding-right: 15%;
+    }
+
+    .texte15 {
+        position: absolute;
+        left: 1%;
+        padding-right: 15%;
+    }
+
+    .texte16 {
+        position: absolute;
+        left: 1%;
+        padding-right: 15%;
+    }
+
+    .liens {
+        position: absolute;
+        left: 0;
+        padding-left: 24%;
+        padding-right: 24%;
+        padding-bottom: 57%;
+    }
+
+    .title4 {
+        position: absolute;
+        left: 1%;
+        padding-right: 15%;
+    }
+
+    #fb {
+        position: absolute;
+        left: 1%;
+        padding-right: 15%;
+        width: 35%;
+    }
+
+    #ig {
+        position: absolute;
+        left: 22%;
+        padding-right: 15%;
+        width: 35%;
+    }
+
+    #whapp {
+        position: absolute;
+        left: 40%;
+        padding-right: 15%;
+        width: 35%;
+    }
+
+    #yt {
+        position: absolute;
+        left: 57%;
+        padding-right: 15%;
+        width: 35%;
+    }
+
+    #x {
+        position: absolute;
+        left: 75%;
+        padding-right: 15%;
+        width: 35%;
+    }
+
+    #pinterest {
+        position: absolute;
+        left: 95%;
+        padding-right: 15%;
+        width: 35%;
+    }
+
+    #in {
+        position: absolute;
+        left: 115%;
+        padding-right: 15%;
+        width: 35%;
+    }
+
+    .title5 {
+        position: absolute;
+        left: 1%;
+        padding-right: 15%;
+        padding-bottom: 90%;
+    }
+
+    #amazon {
+        position: absolute;
+        left: 40%;
+        padding-right: 15%;
+        margin-bottom: 90%;
+        width: 24%;
+        height: 5%;
+    }
+
+    .title6 {
+        position: absolute;
+        left: 1%;
+        padding-right: 15%;
+        padding-bottom: 79%;
+    }
+
+    #visa {
+        position: absolute;
+        left: 50%;
+        padding-right: 15%;
+        margin-bottom: 78%;
+        width: 28%;
+        height: 5%;
+    }
+
+    #masterCard {
+        position: absolute;
+        left: 62%;
+        padding-right: 15%;
+        margin-bottom: 78%;
+        width: 27%;
+        height: 5%;
+    }
+}
